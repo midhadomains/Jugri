@@ -4,7 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useEffectEvent, useState } from "react";
 import { Search, Sparkles } from "lucide-react";
-import { primaryNavigation, siteConfig } from "@/lib/site";
+import { primaryNavigation } from "@/lib/site";
+import { SiteLogo } from "@/components/site-logo";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Container } from "@/components/ui/container";
 
@@ -33,12 +34,13 @@ export function SiteHeader() {
           : "border-border bg-background/82 backdrop-blur-xl"
       }`}
     >
-      <Container className="flex h-20 items-center justify-between gap-4">
+      <Container className="flex h-28 items-center justify-between gap-4 sm:h-32">
         <div className="flex min-w-0 items-center gap-4">
-          <Link href="/" className="group inline-flex min-w-0 flex-col">
-            <span className="font-headline text-lg font-black tracking-tight text-charcoal transition-colors group-hover:text-terracotta dark:text-foreground sm:text-xl">
-              {siteConfig.name}
-            </span>
+          <Link href="/" className="group inline-flex min-w-0 flex-col items-start">
+            <SiteLogo
+              className="h-20 w-auto transition-transform duration-200 group-hover:scale-[1.02] sm:h-24"
+              priority
+            />
             <span className="font-label text-[10px] font-bold uppercase tracking-[0.32em] text-muted">
               Ranchi&apos;s Digital Pulse
             </span>

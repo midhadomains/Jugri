@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { Instagram, PlaySquare, Send, Youtube } from "lucide-react";
 import { categories } from "@/data/categories";
-import { footerNavigation, siteConfig } from "@/lib/site";
+import { footerNavigation } from "@/lib/site";
+import { SiteLogo } from "@/components/site-logo";
 import { Container } from "@/components/ui/container";
 
 export function SiteFooter() {
@@ -10,9 +11,7 @@ export function SiteFooter() {
       <Container className="grid gap-12 py-14 md:grid-cols-[1.3fr_1fr_1fr]">
         <div className="space-y-5">
           <div>
-            <div className="font-headline text-3xl font-black tracking-tight text-charcoal dark:text-foreground">
-              {siteConfig.name}
-            </div>
+            <SiteLogo className="h-24 w-auto sm:h-28" />
             <div className="mt-2 font-label text-xs font-bold uppercase tracking-[0.32em] text-muted">
               Ranchi x Jharkhand x youth culture
             </div>

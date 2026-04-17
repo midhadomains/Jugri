@@ -1,12 +1,12 @@
-import { CultureSpotlight } from "@/components/home/culture-spotlight";
+// import { CultureSpotlight } from "@/components/home/culture-spotlight";
 import { CreatorSpotlight } from "@/components/home/creator-spotlight";
-import { ExploreByCategory } from "@/components/home/explore-by-category";
+// import { ExploreByCategory } from "@/components/home/explore-by-category";
 import { FeaturedPlaces } from "@/components/home/featured-places";
 import { Hero } from "@/components/home/hero";
 import { LiveStories } from "@/components/home/live-stories";
 import { NewsletterCta } from "@/components/home/newsletter-cta";
 import { ReelsSection } from "@/components/home/reels-section";
-import { WeekendPlans } from "@/components/home/weekend-plans";
+// import { WeekendPlans } from "@/components/home/weekend-plans";
 import { LiveTicker } from "@/components/live-ticker";
 import { featuredArticles, featuredEvents, featuredReels } from "@/lib/content";
 
@@ -32,11 +32,11 @@ export default function HomePage() {
       <Hero />
       <ReelsSection />
       <LiveStories />
-      <ExploreByCategory />
+      {/* <ExploreByCategory /> */}
       <FeaturedPlaces />
-      <CultureSpotlight />
+      {/* <CultureSpotlight /> */}
       <CreatorSpotlight />
-      <WeekendPlans />
+      {/* <WeekendPlans /> */}
       <NewsletterCta />
     </>
   );
