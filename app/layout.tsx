@@ -54,7 +54,7 @@ const siteJsonLd = JSON.stringify({
 }).replace(/</g, "\\u003c");
 
 export const metadata: Metadata = createMetadata({
-  title: "Ranchi's Digital Pulse",
+  title: "Jharkhand Updates and Ground Reports Initiative",
   description:
     "A premium reels-first media platform tracking Ranchi news, food, culture, events, creators, and weekend energy across Jharkhand.",
   path: "/",

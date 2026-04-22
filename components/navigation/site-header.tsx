@@ -41,8 +41,8 @@ export function SiteHeader() {
               className="h-20 w-auto transition-transform duration-200 group-hover:scale-[1.02] sm:h-24"
               priority
             />
-            <span className="font-label text-[10px] font-bold uppercase tracking-[0.32em] text-muted">
-              Ranchi&apos;s Digital Pulse
+            <span className="font-label text-[8px] font-bold uppercase tracking-[0.14em] whitespace-nowrap text-muted sm:text-[9px] md:text-[10px]">
+              Jharkhand Updates and Ground Reports Initiative
             </span>
           </Link>
         </div>

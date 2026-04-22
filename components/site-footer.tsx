@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Instagram, PlaySquare, Send, Youtube } from "lucide-react";
+import { Facebook, Instagram, Youtube } from "lucide-react";
 import { categories } from "@/data/categories";
 import { footerNavigation } from "@/lib/site";
 import { SiteLogo } from "@/components/site-logo";
@@ -20,17 +20,32 @@ export function SiteFooter() {
             Premium hyperlocal storytelling for Ranchi and Jharkhand, built around reels, city updates, culture, creators, and the places people actually talk about.
           </p>
           <div className="flex items-center gap-3 text-charcoal dark:text-foreground">
-            <a href="#" className="rounded-full border border-border p-2">
+            <a
+              href="https://www.instagram.com/jugri_johar/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Jugri Johar on Instagram"
+              className="rounded-full border border-border p-2"
+            >
               <Instagram className="h-4 w-4" />
             </a>
-            <a href="#" className="rounded-full border border-border p-2">
+            <a
+              href="https://www.youtube.com/@Jugri_Johar"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Jugri Johar on YouTube"
+              className="rounded-full border border-border p-2"
+            >
               <Youtube className="h-4 w-4" />
             </a>
-            <a href="#" className="rounded-full border border-border p-2">
-              <PlaySquare className="h-4 w-4" />
-            </a>
-            <a href="#" className="rounded-full border border-border p-2">
-              <Send className="h-4 w-4" />
+            <a
+              href="https://www.facebook.com/jugri.johar"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Jugri Johar on Facebook"
+              className="rounded-full border border-border p-2"
+            >
+              <Facebook className="h-4 w-4" />
             </a>
           </div>
         </div>

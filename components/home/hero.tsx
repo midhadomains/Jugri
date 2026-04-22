@@ -6,7 +6,7 @@ import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/ui/reveal";
 
 const heroImage =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuDI7aD3oyFO0YhKHwqa3M-Jd9_V-3SAMtUxtojk6JbeVfm20fpA5i90EJMJyW-Jk_wkFI9WGcRyn8E-DjzXIXTZtNvfsuFwzD1Z4QTPJhZe0sifK8jtVjv1BHD1ZG77PVFXgjzPmMSimrmUycjtQtUUxNovJBbPo5jWCQXWGfJ0--XY4b0uA45dv4Bvc8RmOwHqe6jNkw58K8OwrrvpronZ8Q1PhlQ5-8aaw1vyGXw16UrOXYfWQyNGXYjm8t4wB_xKnGiSWbf60i9g";
+  "/Hero-image/patratu-valley-ranchi-jharkhand-1-hero.jpg";
 
 export function Hero() {
   return (
@@ -14,9 +14,9 @@ export function Hero() {
       <div className="absolute inset-0">
         <Image
           src={heroImage}
-          alt="Ranchi skyline at golden hour"
+          alt="Patratu Valley near Ranchi, Jharkhand"
           fill
-          priority
+          preload
           sizes="100vw"
           className="object-cover"
         />
