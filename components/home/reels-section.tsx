@@ -16,7 +16,10 @@ function getInstagramEmbedUrl(url: string) {
 export function ReelsSection() {
   return (
     <section className="relative overflow-hidden py-20">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(24,69,44,0.08),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(190,99,67,0.1),transparent_30%)]" />
+      <div
+        suppressHydrationWarning
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(24,69,44,0.08),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(190,99,67,0.1),transparent_30%)]"
+      />
       <Container>
         <Reveal className="relative">
           <SectionHeading
