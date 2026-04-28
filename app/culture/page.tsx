@@ -10,7 +10,7 @@ import { createMetadata } from "@/lib/site";
 export const metadata = createMetadata({
   title: "Culture",
   description:
-    "Modern Jharkhand culture through Sohrai, Khovar, sound, design, fashion, and the people reshaping Ranchi's identity.",
+    "Modern Jharkhand culture through Sohrai, Khovar, natural heritage, sound, fashion, and the people reshaping Ranchi's identity.",
   path: "/culture",
 });
 
@@ -19,7 +19,7 @@ export default function CulturePage() {
     ["jharkhand-culture", "fashion-lifestyle"].includes(item.category),
   );
   const cultureCreator = allCreators.find((item) => item.slug === "ishita-kerketta");
-  const culturePlace = allPlaces.find((item) => item.slug === "khovar-studio-store-main-road");
+  const culturePlace = allPlaces.find((item) => item.slug === "jonha-falls-gautamdhara");
   const cultureEvent = allEvents.find((item) => item.slug === "khovar-walls-pop-up-exhibit");
 
   return (
@@ -27,7 +27,7 @@ export default function CulturePage() {
       <PageIntro
         eyebrow="Culture"
         title="Jharkhand identity, edited for now."
-        description="Sohrai and Khovar influences, fashion shifts, folk-meets-digital sound, design objects, and local creators building a new visual language for Ranchi."
+        description="Sohrai and Khovar influences, natural heritage, fashion shifts, folk-meets-digital sound, and local creators building a new visual language for Ranchi."
       />
       <section className="py-12 sm:py-16">
         <Container className="grid gap-6 xl:grid-cols-[1.2fr_0.8fr]">

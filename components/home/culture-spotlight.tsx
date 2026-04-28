@@ -9,7 +9,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 export function CultureSpotlight() {
   const cultureStory = allArticles.find((item) => item.slug === "why-gen-z-is-dressing-in-modern-sohrai-motifs");
   const cultureCreator = allCreators.find((item) => item.slug === "ishita-kerketta");
-  const culturePlace = allPlaces.find((item) => item.slug === "khovar-studio-store-main-road");
+  const culturePlace = allPlaces.find((item) => item.slug === "jonha-falls-gautamdhara");
 
   const cards = [
     {
@@ -28,10 +28,10 @@ export function CultureSpotlight() {
     },
     {
       href: `/explore/${culturePlace?.slug}`,
-      title: culturePlace?.title ?? "Khovar Studio Store",
+      title: culturePlace?.title ?? "Jonha Falls (Gautamdhara)",
       description: culturePlace?.description ?? "",
       image: culturePlace?.image ?? "",
-      eyebrow: "Design destination",
+      eyebrow: "Natural heritage",
     },
   ];
 
