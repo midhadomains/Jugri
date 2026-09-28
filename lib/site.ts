@@ -4,7 +4,7 @@ import type { NavItem } from "@/lib/types";
 export const siteConfig = {
   name: "Jugri",
   shortName: "Jugri",
-  url: "https://jugri.vercel.app",
+  url: "https://www.jugri.com",
   description:
     "Ranchi's premium reels-first guide to city news, culture, food, events, creators, and weekend energy across Jharkhand.",
   location: "Ranchi, Jharkhand, India",
