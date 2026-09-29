@@ -115,7 +115,7 @@ http://localhost:3000
 ## Scripts
 
 - `npm run dev` starts Next.js in development mode using webpack
-- `npm run build` creates a production build
+- `npm run build` creates a production build using webpack
 - `npm run start` starts the production server
 - `npm run lint` runs ESLint
 
@@ -180,6 +180,8 @@ next dev --webpack
 ```
 
 This avoids a local development issue where Turbopack was resolving Tailwind incorrectly from the Windows user directory in this workspace.
+
+Production builds also use `next build --webpack` to work around the Turbopack Google font import error (`next/font/google queries have exactly one entry`). Deployment build commands should invoke `npm run build` so this setting is applied.
 
 ### Hydration Warnings On Localhost
 
